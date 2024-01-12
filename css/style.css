@@ -253,7 +253,7 @@ header .bot-header{
 
 @media screen and (max-width: 992px) {
     .navbar-collapse {
-        background-color: #040a17; 
+        background-color: white; 
         width: auto;/* Kế thừa màu nền từ body */
         padding: 1rem; /* Tăng khoảng cách nội dung từ viền */
       }
