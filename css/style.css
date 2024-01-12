@@ -308,6 +308,7 @@ header .bot-header{
       }
       .fixtop{
         position: fixed;
+        transition: all 0.5s;
       }
      
       
