@@ -172,15 +172,16 @@ button.search-btn:hover{
 }
 
 /* Dark Theme*/
-.dark#Mybody {
+.dark#Mybody, .dark#navbarTogglerDemo02 {
   background-color: #161b2e;
 }
 .dark #switchButton {
   background-color: inherit;
   
 }
-.dark#Mybody .navbar-brand, .dark#Mybody .nav-link{
-    color: black;
+
+.dark#Mybody .navbar-brand, .dark#navbarTogglerDemo02 .nav-link{
+    color: #fff;
 }
 .dark#Mybody .bot-header a:hover{
     color: #ff6e65;
@@ -301,7 +302,10 @@ header .bot-header{
       .cap-top-header {
         display: none;
       }
-      
+      #bottom-header .nav-link{
+        border-bottom: 1px solid #cecece;
+        
+      }
   }
   
   
