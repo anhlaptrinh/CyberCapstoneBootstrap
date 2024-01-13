@@ -172,15 +172,16 @@ button.search-btn:hover{
 }
 
 /* Dark Theme*/
-.dark#Mybody {
+.dark#Mybody, .dark#navbarTogglerDemo02 {
   background-color: #161b2e;
 }
 .dark #switchButton {
   background-color: inherit;
   
 }
-.dark#Mybody .navbar-brand, .dark#Mybody .nav-link{
-    color: white;
+
+.dark#Mybody .navbar-brand, .dark#navbarTogglerDemo02 .nav-link{
+    color: #fff;
 }
 .dark#Mybody .bot-header a:hover{
     color: #ff6e65;
@@ -253,7 +254,7 @@ header .bot-header{
 
 @media screen and (max-width: 992px) {
     .navbar-collapse {
-        background-color: #040a17; 
+        background-color: white; 
         width: auto;/* Kế thừa màu nền từ body */
         padding: 1rem; /* Tăng khoảng cách nội dung từ viền */
       }
@@ -301,6 +302,18 @@ header .bot-header{
       .cap-top-header {
         display: none;
       }
+      #bottom-header .nav-link{
+        border-bottom: 1px solid #cecece;
+        
+      }
+      .fixtop{
+        position: fixed;
+        transition: all 0.5s;
+      }
+     
+      
+     
+      
       
   }
   
@@ -608,15 +621,14 @@ h3.title-main span::after{
    
 }
 
+/* code cua hung */
 
-
-/* strength in number */
-
+/* stunumber */
 .title-heading-w3 {
     max-width: 700px;
 }
 
-h3 {
+.stunumber h3 {
     color: #060606;
 }
 
@@ -652,26 +664,26 @@ h3.title-main span {
     color: #ff6e65;
 }
 
-p {
+.stunumber p {
     margin: 0;
     padding: 0;
 }
 
-p {
+.stunumber p {
     font-size: 16px;
     line-height: 28px;
     color: #707070;
     letter-spacing: .4px;
 }
 
-.row {
+.stunumber .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-p.counter {
+.stunumber p.counter {
     font-size: 46px;
     font-weight: 600;
     line-height: 69px;
@@ -679,14 +691,12 @@ p.counter {
     color: #060606;
 }
 
-p.count-text {
+.stunumber p.count-text {
     text-transform: uppercase;
     color: #707070;
 }
 
-
 /* feedback */
-
 .stufeedback .testimonials_grid {
     background: #fff;
     border-radius: 4px;
@@ -694,18 +704,18 @@ p.count-text {
     padding: 2rem;
 }
 
-.testimonials_grid i {
+.stufeedback .testimonials_grid i {
     font-size: 22px;
     color: #ff6e65;
     line-height: .8;
     display: inline-block;
 }
 
-.fa-solid:before {
+.stufeedback .fa-solid:before {
     content: "";
 }
 
-.sub-test q::before {
+.stufeedback .sub-test q::before {
     font-size: 50px;
     color: #ff6e65;
     font-family: initial;
@@ -715,11 +725,11 @@ p.count-text {
     content: '';
 }
 
-q::after {
+.stufeedback q::after {
     content: close-quote;
 }
 
-.d-grid {
+.stufeedback .d-grid {
     display: grid;
 }
 
@@ -734,7 +744,7 @@ q::after {
     border-radius: 50%;
 }
 
-.img-fluid {
+.stufeedback .img-fluid {
     max-width: 100%;
     height: auto;
     border-style: none;
@@ -745,13 +755,13 @@ q::after {
     line-height: 16px;
 }
 
-h5 {
+.stufeedback h5 {
     margin: 0;
     padding: 0;
     color: #060606;
 }
 
-h5 {
+.stufeedback h5 {
     clear: both;
 }
 
@@ -760,7 +770,28 @@ h5 {
     color: #707070;
 }
 
-/* Instructors */
+
+.stufeedback p {
+    margin: 0;
+    padding: 0;
+}
+
+.stufeedback p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+
+.stufeedback .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* stu instructors */
+
 
 .stuinstructors .col-lg-3 {
     position: relative;
@@ -854,9 +885,7 @@ h5 {
     font-weight: 400;
 }
 
-
 /* contact us */
-
 
 .stucontactus .img-responsive {
     width: 100%;
@@ -873,16 +902,13 @@ h5 {
     line-height: 45px;
 }
 
-p {
+.stucontactus p {
     margin: 0;
     padding: 0;
 }
 
-.stucontactus .btn {
+.stucontactus .button-contact {
     cursor: pointer;
-}
-
-.stucontactus .btn-style {
     padding: 14px 30px;
     font-weight: 600;
     font-size: 16px;
@@ -891,22 +917,21 @@ p {
     background: #ff6e65;
     border: none;
     transition: all .25s;
-    
 }
 
-
-.stucontactus .btn-style-secondary:hover {
+.stucontactus .button-contact:hover {
     background: #0d369f;
     color: #fff;
 }
 
-/* stu send */
-.stu-send .footer-sub {
+/* stu subscribe */
+
+.stusub {
     padding: 80px 0;
-    background: #060e1f;
+    
 }
 
-.stu-send .right-side {
+.stusub .right-side {
     padding: 50px;
     max-width: 1000px;
     margin-top: 0;
@@ -922,35 +947,36 @@ p {
     box-shadow: 0px -1px 41px rgb(21 22 23 /8%);
 }
 
-.stu-send .col-md-6 {
+.stusub .col-md-6 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.stu-send .footer-form h4.title-head {
+.stusub .subscribe-form h4.title-head {
     font-size: 35px;
     line-height: 40px;
     color: #060606;
     font-weight: 600;
 }
 
-.stu-send .footer-form .main-midd p {
+
+.stusub .subscribe-form .main-midd p {
     font-size: 15px;
     color: #707070;
     letter-spacing: 1px;
 }
 
-.stu-send .footer-form .rightside-form {
+.stusub .subscribe-form .rightside-form {
     display: flex;
 }
 
-.stu-send input {
+.stusub input {
     margin: 0;
 }
 
-.stu-send .form-control {
+.stusub .form-control {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -966,22 +992,23 @@ p {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.stu-send .form-control {
+
+.stusub .form-control {
     background-color: #f8f9ff;
     border: 1px solid #eee;
 }
 
 
-.stu-send input[type="email"]
+.stusub input[type="email"]
 
-.stu-send textarea {
+.stusub textarea {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 3px;
 }
 
-.stu-send .footer-form form.rightside-form input {
+.stusub .subscribe-form form.rightside-form input {
     background: transparent;
     border: none;
     padding: 15px 20px;
@@ -993,7 +1020,7 @@ p {
     border: 1px solid #eee;
 }
 
-.stu-send button, input[type="button"], input[type="reset"], input[type="submit"] {
+.stusub button, input[type="button"], input[type="reset"], input[type="submit"] {
     border: 1px solid;
     border-color: #ccc #ccc #bbb;
     border-radius: 3px;
@@ -1003,20 +1030,20 @@ p {
     padding: 0.6em 1em 0.4em;
 }
 
-.stu-send button {
+.stusub button {
     cursor: pointer;
 }
 
 
-.stu-send button, [type="button"], [type="reset"], [type="submit"] {
+.stusub button, [type="button"], [type="reset"], [type="submit"] {
     -webkit-appearance: button;
 }
 
-.stu-send button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+.stusub button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
     cursor: pointer;
 }
 
-.stu-send .footer-form .rightside-form button {
+.stusub .subscribe-form .rightside-form button {
     background: #0d369f;
     border: none;
     color: #fff;
@@ -1027,12 +1054,11 @@ p {
     border-radius: 0 8px 8px 0;
 }
 
-.stu-send .footer-form .rightside-form button:hover {
+.stusub .subscribe-form .rightside-form button:hover {
     opacity: .9;
 }
 
-
-
+/* code cua hung */
 
 
 
