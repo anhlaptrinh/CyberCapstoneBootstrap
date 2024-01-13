@@ -401,52 +401,113 @@ header .bot-header{
     left: 0px;
   }
   @media (max-width: 1200px) {
-    #carouselstuCaptions .carousel-caption h5 {
-      font-size: 57px;
-      line-height: 67px;
+    .carousel-inner h5  {
+      font-size: 50px;
+      line-height: 60px;
     }
-    #home #carouselstuCaptions{
-        height: 500px;
+    #carouselstuCaptions img{
+        height: 300px;
+    }
+    #stubanner{
+        position: relative;
+        margin-top: -15em;
+    }
+    .btn-style{
+        padding: 10px 20px;
+    }
+    .mt-4{
+        margin-top: 0 !important;
     }
     
   }
   @media (max-width: 992px) {
-    #carouselstuCaptions .carousel-caption h5 {
-      font-size: 50px;
-      line-height: 60px;
+    .carousel-inner h5  {
+      font-size: 45px;
+      line-height: 55px;
     }
-    #home #carouselstuCaptions{
-        height: 400px;
-    }
-  }
-
-  @media (max-width: 786px) {
-     .stucarousel .carousel-caption h5 {
-      font-size: 50px;
-      line-height: 60px;
-    }
-     #carouselstuCaptions{
+    #carouselstuCaptions img{
         height: 300px;
     }
+    #stubanner{
+        position: relative;
+        margin-top: -20em;
+    }
+    .btn-style{
+        padding: 10px 20px;
+    }
+    .mt-4{
+        margin-top: 0 !important;
+    }
+    
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .carousel-inner h5 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+     #carouselstuCaptions img{
+        height: 300px;
+    }
+    #stubanner{
+        position: relative;
+        margin-top: -26em;
+    }
+    .btn-style{
+        padding: 10px 20px;
+    }
+    .mt-4{
+        margin-top: 0 !important;
+    }
+    .class-item .col-md-6{
+        margin-bottom: 10px;
+    }
   }
 
-  @media screen and (max-width: 415px) {
-    .stucarousel .carousel-caption h5 {
-      font-size: 40px;
-      line-height: 50px;
+  @media (max-width: 520px) {
+    .carousel-inner h5 {
+      font-size: 20px;
+      line-height: 30px;
     }
-     #carouselstuCaptions{
-        height: 400px;
+     #carouselstuCaptions img{
+        height: 500px;
     }
-  }
+    #stubanner{
+        position: relative;
+        margin-top: -30em;
+    }
+    .btn-style{
+        padding: 5px 10px;
+    }
+    .mt-4{
+        margin-top: 0 !important;
+    }
+    }
+    
 
-  @media screen and (max-width: 366px) {
-    #carouselstuCaptions .carousel-caption h5 {
-      font-size: 38px;
-      line-height: 48px;
+  @media (max-width: 396px) {
+    .carousel-inner h5 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 0;
     }
-    #home #carouselstuCaptions{
-        height: 200px;
+     #carouselstuCaptions img{
+        height: 500px;
+    }
+    #stubanner{
+        position: relative;
+        margin-top: -34em;
+    }
+    .btn-style{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .mt-4{
+        margin-top: 0 !important;
+    }
+    .carousel-indicators{
+        top: 10%;
     }
   }
  
@@ -711,6 +772,10 @@ h3.title-main span {
     display: inline-block;
 }
 
+.dark#Mybody .stufeedback .testimonials_grid {
+    background: #040a17;
+}
+
 .stufeedback .fa-solid:before {
     content: "";
 }
@@ -807,6 +872,15 @@ h3.title-main span {
     border-radius: 8px;
 }
 
+.dark#Mybody .stuinstructors .team-block-single {
+    background: #040a17;
+}
+
+
+.dark#Mybody .stuinstructors .member a {
+    color: #fff;
+}
+
 .stuinstructors .team-grids {
     position: relative;
     overflow: hidden;
@@ -881,6 +955,7 @@ h3.title-main span {
 }
 
 .stuinstructors small {
+    color: #707070;
     font-size: 80%;
     font-weight: 400;
 }
@@ -947,6 +1022,15 @@ h3.title-main span {
     box-shadow: 0px -1px 41px rgb(21 22 23 /8%);
 }
 
+.dark#Mybody .stusub .right-side {
+    background: #000;
+}
+
+
+.dark#Mybody .stusub h4  {
+    color: white;
+}
+
 .stusub .col-md-6 {
     position: relative;
     width: 100%;
@@ -967,6 +1051,8 @@ h3.title-main span {
     color: #707070;
     letter-spacing: 1px;
 }
+
+
 
 .stusub .subscribe-form .rightside-form {
     display: flex;
