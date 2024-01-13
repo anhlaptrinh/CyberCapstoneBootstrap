@@ -610,6 +610,8 @@ h3.title-main span::after{
 
 
 
+/* strength in number */
+
 .title-heading-w3 {
     max-width: 700px;
 }
@@ -760,14 +762,14 @@ h5 {
 
 /* Instructors */
 
-.col-lg-3 {
+.stuinstructors .col-lg-3 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.team-block-single {
+.stuinstructors .team-block-single {
     box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
     padding: 10px;
     background: #fff;
@@ -780,18 +782,18 @@ h5 {
     z-index: 1;
 }
 
-a:hover {
+.stuinstructors a:hover {
     color: #0d369f;
     text-decoration: none;
     transition: 0.5s all;
 }
 
-img {
+.stuinstructors img {
     vertical-align: middle;
     border-style: none;
 }
 
-.img-fluid {
+.stuinstructors .img-fluid {
     max-width: 100%;
     height: auto;
 }
@@ -834,12 +836,12 @@ img {
     align-items: center;
 }
 
-h5.member a {
+.stuinstructors h5.member a {
     font-weight: 600;
     color: #060606;
 }
 
-body a:hover {
+.stuinstructors a:hover {
     text-decoration: none;
 }
 
@@ -847,7 +849,7 @@ body a:hover {
     color: #ff6e65;
 }
 
-small {
+.stuinstructors small {
     font-size: 80%;
     font-weight: 400;
 }
@@ -856,16 +858,16 @@ small {
 /* contact us */
 
 
-.img-responsive {
+.stucontactus .img-responsive {
     width: 100%;
     display: block;
 }
 
-.contact-right img {
+.stucontactus .contact-right img {
     border-radius: 8px;
 }
 
-h3.title-style {
+.stucontactus h3.title-style {
     font-size: 35px;
     font-weight: 600;
     line-height: 45px;
@@ -876,11 +878,11 @@ p {
     padding: 0;
 }
 
-.btn {
+.stucontactus .btn {
     cursor: pointer;
 }
 
-.btn-style {
+.stucontactus .btn-style {
     padding: 14px 30px;
     font-weight: 600;
     font-size: 16px;
@@ -893,18 +895,18 @@ p {
 }
 
 
-.btn-style-secondary:hover {
+.stucontactus .btn-style-secondary:hover {
     background: #0d369f;
     color: #fff;
 }
 
-/* footer */
-.stufooter .footer-sub {
+/* stu send */
+.stu-send .footer-sub {
     padding: 80px 0;
     background: #060e1f;
 }
 
-.right-side {
+.stu-send .right-side {
     padding: 50px;
     max-width: 1000px;
     margin-top: 0;
@@ -920,35 +922,35 @@ p {
     box-shadow: 0px -1px 41px rgb(21 22 23 /8%);
 }
 
-.col-md-6 {
+.stu-send .col-md-6 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.footer-form h4.title-head {
+.stu-send .footer-form h4.title-head {
     font-size: 35px;
     line-height: 40px;
     color: #060606;
     font-weight: 600;
 }
 
-.footer-form .main-midd p {
+.stu-send .footer-form .main-midd p {
     font-size: 15px;
     color: #707070;
     letter-spacing: 1px;
 }
 
-.footer-form .rightside-form {
+.stu-send .footer-form .rightside-form {
     display: flex;
 }
 
-input {
+.stu-send input {
     margin: 0;
 }
 
-.form-control {
+.stu-send .form-control {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -964,22 +966,22 @@ input {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-control {
+.stu-send .form-control {
     background-color: #f8f9ff;
     border: 1px solid #eee;
 }
 
 
-input[type="email"]
+.stu-send input[type="email"]
 
-textarea {
+.stu-send textarea {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 3px;
 }
 
-.footer-form form.rightside-form input {
+.stu-send .footer-form form.rightside-form input {
     background: transparent;
     border: none;
     padding: 15px 20px;
@@ -991,7 +993,7 @@ textarea {
     border: 1px solid #eee;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+.stu-send button, input[type="button"], input[type="reset"], input[type="submit"] {
     border: 1px solid;
     border-color: #ccc #ccc #bbb;
     border-radius: 3px;
@@ -1001,20 +1003,20 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     padding: 0.6em 1em 0.4em;
 }
 
-button {
+.stu-send button {
     cursor: pointer;
 }
 
 
-button, [type="button"], [type="reset"], [type="submit"] {
+.stu-send button, [type="button"], [type="reset"], [type="submit"] {
     -webkit-appearance: button;
 }
 
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+.stu-send button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
     cursor: pointer;
 }
 
-.footer-form .rightside-form button {
+.stu-send .footer-form .rightside-form button {
     background: #0d369f;
     border: none;
     color: #fff;
@@ -1025,7 +1027,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     border-radius: 0 8px 8px 0;
 }
 
-.footer-form .rightside-form button:hover {
+.stu-send .footer-form .rightside-form button:hover {
     opacity: .9;
 }
 
