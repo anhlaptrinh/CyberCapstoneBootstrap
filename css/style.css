@@ -776,6 +776,12 @@ h3.title-main span {
     display: inline-block;
 }
 
+@media (max-width: 992px) {
+    .stufeedback .testimonials_grid {
+        margin-top: 1.5rem;
+    }
+}
+ 
 .dark#Mybody .stufeedback .testimonials_grid {
     background: #040a17;
 }
