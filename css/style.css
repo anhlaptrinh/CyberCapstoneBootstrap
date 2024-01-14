@@ -1011,7 +1011,30 @@ h3.title-main span {
 
 /* stu subscribe */
 
-
+.stusub{
+    top: -6em;
+    left: 15em;
+    
+    
+}
+.subscribe-form{
+    padding: 30px 0;
+}
+@media (max-width: 1200px){
+    .stusub{
+        left: 0em;
+        width: 100%;
+        top: -8em;
+        padding: 30px 0;
+    }
+}
+@media (max-width: 992px){
+    .stusub{
+        left: 0em;
+        width: 100%;
+        top: -7em;
+    }
+}
 @media (max-width:768px) {
     .stusub .row {
         flex-wrap: wrap;
@@ -1029,11 +1052,35 @@ h3.title-main span {
     .stusub .subscribe-form {
         flex-wrap: wrap;
     }
+    .stusub{
+        top: -8em;
+        left: 0em;
+        width: 100%;
+    }
 }
-
+@media (max-width: 660px){
+    .stusub{
+        top: -8em;
+        left: 0em;
+        width: 100%;
+    }
+}
 @media (max-width: 440px) {
     .stusub .rightside-form {
         flex-wrap: wrap;
+    }
+    .stusub {
+        top: -9em;
+        left: 0em;
+    }
+}
+@media (max-width: 304px){
+    .stusub {
+        top: -9em;
+        left: 0;
+    }
+    .stufooter-sub .foot-text{
+        padding-top: 101px;
     }
 }
 
