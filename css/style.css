@@ -463,6 +463,10 @@ header .bot-header{
     .class-item .col-md-6{
         margin-bottom: 10px;
     }
+
+    .stufeedback .mt-4 {
+        margin-top: 1.5rem!important;
+    }
   }
 
   @media (max-width: 520px) {
